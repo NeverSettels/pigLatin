@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(206, 195, 38);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+input{
+    length: 100%;
+    width: 50%;
+}
