@@ -18,15 +18,14 @@ function pigLatin(str){
       let counter = 0;
       for(let index = 0; index<=2; ++index){
         
-        if(consonants.includes(word[index])){
-          console.log(word[index])
+        if(consonants.includes(word[index])||(word[index]==='q')&&word[index+1]==='u'){       
           counter++
         }
         else if (vowels.includes(word[index])){
           break;
         }
       }
-      console.log(counter)
+      
       word = word + word.substr(0,counter) + 'ey'
       word = word.substr(counter,word.length-1)
       pigArr.push(word)
